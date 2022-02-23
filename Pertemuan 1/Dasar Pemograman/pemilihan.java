@@ -2,15 +2,15 @@ import java.util.Scanner;
 public class pemilihan {
     public static void main(String[] args) {
         Scanner zh = new Scanner(System.in);
-        System.out.println("PROGRAM MENGITUNG NILAI AKHIR");
         System.out.println("=============================");
-        System.out.print("masukkan nilai TUGAS: ");
+        System.out.println("      HITUNG NILAI AKHIR");
+        System.out.println("=============================");
+        System.out.print("Masukkan nilai TUGAS: ");
         int tugas = zh.nextInt();
-        System.out.print("masukkan nilai UTS: ");
+        System.out.print("Masukkan nilai UTS: ");
         int uts = zh.nextInt();
-        System.out.print("masukkan nilai UAS: ");
+        System.out.print("Masukkan nilai UAS: ");
         int uas = zh.nextInt();
-        System.out.println("=============================");
         System.out.println("=============================");
         float nilaiAkhir;
         String nilaiHuruf;
@@ -40,7 +40,7 @@ public class pemilihan {
         }
         System.out.println("=============================");
         if (nilaiHuruf == "A" || nilaiHuruf == "B+" || nilaiHuruf == "B" || nilaiHuruf == "C+" || nilaiHuruf == "C" ){
-           System.out.println("SELAMAT LULUS");
+           System.out.println("SELAMAT ANDA LULUS");
         } else{
             System.out.println("MOHON MAAF TIDAK LULUS");
         }

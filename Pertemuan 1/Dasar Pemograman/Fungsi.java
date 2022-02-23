@@ -41,9 +41,10 @@ public class Fungsi {
         int stok1 = 0;
             for(int i=0; i<4; i++){
                 for(int j=0; j<4; j++){
-                 stok1 += stock[i][j];   
+                 stok1 += stock[j][i];   
                 }
                 System.out.println("Total stok bunga " + bunga[i]+" di seluruh cabang : "+ stok1);
+                stok1 = 0;
             }
               
     }
