@@ -65,9 +65,6 @@ public class MahasiswaMain {
             default: 
                 System.out.println("Pilihan tidak tersedia!");
                 break;
-        }
-        
-
-        
+        }    
     }
 }
