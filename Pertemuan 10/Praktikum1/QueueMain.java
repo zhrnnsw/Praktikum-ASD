@@ -26,6 +26,7 @@ public class QueueMain {
         Queue Q = new Queue(n);
 
         int pilih;
+        boolean ulang = true;
 
         do {
             menu();
@@ -60,6 +61,7 @@ public class QueueMain {
                     int p = sc.nextInt();
                     Q.peekAt(p);
             }
-        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5 || pilih == 6 || pilih ==7);
+        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5 || pilih == 6 || pilih ==7 && ulang == true);
+        System.out.println("--------SELESAI--------")
     }
 }
