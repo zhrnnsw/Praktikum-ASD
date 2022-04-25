@@ -49,7 +49,7 @@ public class queue {
     }
 
     public mahasiswa dequeue(){
-        mahasiswa dt = new mahasiswa(null, null, 0, 0);
+        mahasiswa dt = new mahasiswa();
         if (isEmpty()){
             System.out.println("Queue masih kosong");
         } else {

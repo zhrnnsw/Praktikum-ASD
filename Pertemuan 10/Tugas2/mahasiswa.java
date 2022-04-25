@@ -6,6 +6,9 @@ public class mahasiswa{
     int absen;
     double ipk;
 
+    mahasiswa(){
+        
+    }
     mahasiswa (String nim, String nama, int absen, double ipk){
         this.nim = nim;
         this.nama = nama;
