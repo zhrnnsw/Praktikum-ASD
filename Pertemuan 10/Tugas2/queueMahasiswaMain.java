@@ -45,7 +45,8 @@ public class queueMahasiswaMain {
                 case 2 :
                    mahasiswa data = antri.dequeue();
                    if(!"".equals(data.nim)&& !"".equals(data.nama) && data.absen != 0 && data.ipk != 0){
-                    System.out.println("Antrian yang keluar : " + data.nim + " " + data.nama + " " + data.absen + " " + data.ipk);
+                    System.out.println("Antrian yang keluar : " + data.nim + " " + data.nama + " " + data.absen + 
+                    " " + data.ipk);
                    } 
                     break;
                 case 3 :
@@ -72,7 +73,5 @@ public class queueMahasiswaMain {
             }
 
         } while (ulang);
-    }
-
-    
+    }  
 }
