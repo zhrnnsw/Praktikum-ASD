@@ -36,5 +36,54 @@ Zahra Annisa Wahono 1F - TI / 29
 
 6. Tunjukkan potongan kode program yang merupakan queue overflow!
 
-    **Jawab:** 
+    **Jawab:** <img src = "img/1.6overflow.png">
+
+7. Lakukan modifikasi program sehingga pada saat terjadi
+queue overflow dan queue underflow, program dihentikan!
+
+?????????????
+
+### **Praktikum 2**
+
+1. Pada class QueueMain, jelaskan fungsi IF pada potongan kode program berikut!
+
+            if(!"".equals(data.norek) && !"".equals(data.nama ) && !"".equals(data.alamat) && data.umur != 0 && data.saldo != 0){
+                        System.out.println("Antrian yang keluar : "+data.norek+" "+data.nama+" "+data.alamat+" "+data.umur+" "+data.saldo);
+                        break;
+                    }
+
+    **Jawab:** Untuk memastikan bahwa data yang akan dikeluarkan pada atribut norek, nama, dan alamat tidak kosong serta atribut umur dan saldonya tidak 0, maka akan di print pemberitahuan bahwa data tersebut telah keluar sedangkan jika salah satu syarat tersebut tidak terpenuhi maka pemberitahuan data keluar tidak akan di print
+
+2. Lakukan modifikasi program dengan menambahkan method baru bernama peekRear pada class Queue yang digunakan untuk mengecek antrian yang berada di posisi belakang! Tambahkan pula daftar menu 5. Cek Antrian paling belakang pada class QueueMain sehingga method peekRear dapat dipanggil!
+
+    **Jawab:** <img src = "img/2.2kodeQueue.png">
+
+##  **TUGAS**
+1. **Kode Modifikasi**
+
+    <img src = "img/tugas1kode.png">
+
+    **Output**
+    ????????????
+
+2. **Kode**
+
+    Class mahasiswa
+    <img src = "img/tugas2kode.png">
+
+    Class queue
+    <img src = "img/tugas2kode2.png">
+    <img src = "img/tugas2kode3.png">
+    <img src = "img/tugas2kode4.png">
+    <img src = "img/tugas2kode5.png">
+    <img src = "img/tugas2kode6.png">
+
+    Class queueMahasiswaMain
+    <img src = "img/tugas2kodeMain.png">
+    <img src = "img/tugas2kodeMain2.png">
+
+
+    **Output**
+    ???????????
+
             
