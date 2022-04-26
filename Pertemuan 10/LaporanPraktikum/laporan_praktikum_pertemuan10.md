@@ -41,7 +41,17 @@ Zahra Annisa Wahono 1F - TI / 29
 7. Lakukan modifikasi program sehingga pada saat terjadi
 queue overflow dan queue underflow, program dihentikan!
 
-?????????????
+   **Jawab:** 
+
+   Kode Modifikasi
+
+   <img src = "img/1.7kode.png">
+   <img src = "img/1.7kode2.png">
+
+   Output
+
+   <img src = "img/1.7run.png">
+   <img src = "img/1.7run2.png">
 
 ### **Praktikum 2**
 
@@ -62,16 +72,21 @@ queue overflow dan queue underflow, program dihentikan!
 1. **Kode Modifikasi**
 
     <img src = "img/tugas1kode.png">
+    <img src = "img/tugas1kode2.png">
 
     **Output**
-    ????????????
+
+    <img src = "img/tugas1run.png">
+    <img src = "img/tugas1run2.png">
 
 2. **Kode**
 
     Class mahasiswa
-    <img src = "img/tugas2kode.png">
+
+    <img src = "img/tugas2kode1.png">
 
     Class queue
+
     <img src = "img/tugas2kode2.png">
     <img src = "img/tugas2kode3.png">
     <img src = "img/tugas2kode4.png">
@@ -79,11 +94,16 @@ queue overflow dan queue underflow, program dihentikan!
     <img src = "img/tugas2kode6.png">
 
     Class queueMahasiswaMain
+
     <img src = "img/tugas2kodeMain.png">
     <img src = "img/tugas2kodeMain2.png">
 
 
     **Output**
-    ???????????
+
+    <img src = "img/tugas2run.png">
+    <img src = "img/tugas2run2.png">
+    <img src = "img/tugas2run3.png">
+    <img src = "img/tugas2run4.png">
 
             

@@ -1,6 +1,5 @@
 package Praktikum2;
 
-import java.net.NetworkInterface;
 
 public class Queue {
 

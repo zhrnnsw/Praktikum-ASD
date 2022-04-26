@@ -1,7 +1,5 @@
 package Tugas2;
 
-import java.util.Scanner;
-
 public class queue {
     String nim ;
     public mahasiswa[] antrian;
@@ -132,12 +130,9 @@ public class queue {
     public void printMahasiswa (int posisi){
         int id;
         if (rear >= front){
-        id = posisi - 1;
+        id = front + posisi - 1;
         }else {
-            id = posisi + front -1;
-            if(id>max){
-                id -= max;
-            }
+            id = posisi + front -1 % max;
         }
         System.out.println(antrian[id].nim + " " + antrian[id].nama +" "+antrian[id].absen +" "+antrian[id].ipk);
     }

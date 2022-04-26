@@ -1,5 +1,7 @@
 package Praktikum1;
 
+import java.net.IDN;
+
 public class Queue {
 
     int data[];
@@ -37,20 +39,49 @@ public class Queue {
     }
 
     public void peekPosition(int n) {
-        if (!IsEmpty()) {
-            for (int i = 0; i < max; i++) {
-                if (data[i] == n) {
-                    System.out.println("Elemen berada pada indeks ke : " + i + " yaitu data ke " + (i + 1));
-                } else {
-                    System.out.println("Data tidak ditemukan");
+        if(!IsEmpty()){
+            int id = -1;
+            int posisi;
+            for(int i = 0; i < max; i++){
+                if(data[i] == n){
+                    id = i;
+                    break;
                 }
             }
+            if(id != -1){
+                if(rear>=front){
+                    posisi = (id+1) - front;
+                    System.out.print(n + " ditemukan pada antrian ke " + posisi);
+                }else if(rear<front){
+                    posisi = max + (id+1) - front;
+                    System.out.print(n + " ditemukan pada antrian ke " + posisi);
+                }else if(id == rear){
+                    System.out.print(n + " ditemukan pada antrian terakhir");   
+                }
+                System.out.println(" indeks ke-"+ id);
+            }else{
+                System.out.println(n + " tidak ditemukan pada antrian ");
+            }
+            
+        }else{
+            System.out.println("Queue masih kosong");
         }
     }
 
-    public void peekAt(int position) {
-        if (IsEmpty()) {
-            System.out.println("Nilai dari indeks tersebut adalah : " + data[position]);
+    public void peekAt(int posisi) {
+        int id;
+        if (!IsEmpty()){
+            if (rear >= front){
+            id = posisi - 1;
+            }else {
+                id = posisi + front -1;
+                if(id>max){
+                    id -= max;
+                }
+            }
+            System.out.println("Pada antrian ke-" + posisi + "(indeks "+ id+" )"+ "terdapat data : " + data[id]);
+        } else {
+            System.out.println("Queue masih kosong"); 
         }
     }
 
@@ -79,10 +110,6 @@ public class Queue {
     }
 
     public void Enqueue(int dt) {
-        if (IsFull()) {
-            System.out.println("Queue sudah penuh");
-            ulang = false;
-        } else {
             if (IsEmpty()) {
                 front = rear = 0;
             } else {
@@ -94,15 +121,10 @@ public class Queue {
             }
             data[rear] = dt;
             size++;
-        }
     }
 
     public int Dequeue() {
         int dt = 0;
-        if (IsEmpty()) {
-            System.out.println("Queue masih kosong");
-            ulang = false;
-        } else {
             dt = data[front];
             size--;
             if (IsEmpty()) {
@@ -114,7 +136,6 @@ public class Queue {
                     rear++;
                 }
             }
-        }
         return dt;
     }
 }
