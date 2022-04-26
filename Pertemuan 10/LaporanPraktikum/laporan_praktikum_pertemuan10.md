@@ -66,7 +66,19 @@ queue overflow dan queue underflow, program dihentikan!
 
 2. Lakukan modifikasi program dengan menambahkan method baru bernama peekRear pada class Queue yang digunakan untuk mengecek antrian yang berada di posisi belakang! Tambahkan pula daftar menu 5. Cek Antrian paling belakang pada class QueueMain sehingga method peekRear dapat dipanggil!
 
-    **Jawab:** <img src = "img/2.2kodeQueue.png">
+    **Jawab:** 
+    
+    Kode
+
+    <img src = "img/2.2kodeQueue.png">
+    <img src = "img/2.2kode.png">
+    <img src = "img/2.2kode2.png">
+    
+    Output
+
+    <img src = "img/2.2run.png">
+    <img src = "img/2.2run2.png">
+
 
 ##  **TUGAS**
 1. **Kode Modifikasi**
