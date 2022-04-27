@@ -62,6 +62,6 @@ public class QueueMain {
                     Q.peekAt(p);
             }
         } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5 || pilih == 6 || pilih ==7 && ulang == true);
-        System.out.println("--------SELESAI--------")
+        System.out.println("--------SELESAI--------");
     }
 }
